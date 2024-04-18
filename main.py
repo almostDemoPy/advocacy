@@ -14,7 +14,7 @@ def index():
 
 @app.route('/index.html')
 def index_file():
-  return render("home")
+  return redirect_to("/")
 
 @app.route('/home')
 def home():
