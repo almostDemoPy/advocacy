@@ -12,9 +12,9 @@ def redirect_to(template_name : str):
 def index():
   return render("home")
 
-@app.route('/index.html')
+@app.route('/index')
 def index_file():
-  return redirect_to("/")
+  return redirect_to("index")
 
 @app.route('/home')
 def home():
