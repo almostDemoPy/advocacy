@@ -12,6 +12,10 @@ def redirect_to(template_name : str):
 def index():
   return render("home")
 
+@app.route('/index.html')
+def index_file():
+  return render("home")
+
 @app.route('/home')
 def home():
   return redirect_to("/")
