@@ -10,7 +10,7 @@ def redirect_to(template_name : str):
 
 @app.route('/')
 def index():
-  return render("home")
+  return redirect_to("home")
 
 @app.route('/index')
 def index_file():
