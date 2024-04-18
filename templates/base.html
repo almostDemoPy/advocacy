@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'styles/home.css') }}">
+  </head>
+  <body class = "bg-pearl">
+    <div>
+      <nav class = "bg-blurple height-70 items-center width-full" align = "center">
+        <a href = "/redirect?data=index" class = "bg-pearl child-full border-radius-8 no-link-decor" align = "center">
+          <div>
+            HOME
+          </div>
+        </a>
+        <a href = "/redirect?data=id_one" class = "bg-pearl child-full border-radius-8 no-link-decor" align = "center">
+          <div>
+            ISSUE DISCUSSION
+          </div>
+        </a>
+        <a href = "/redirect?data=id_two" class = "bg-pearl child-full border-radius-8 no-link-decor" align = "center">
+          <div>
+            ISSUE DISCUSSION
+          </div>
+        </a>
+        <a href = "/redirect?data=id_three" class = "bg-pearl child-full border-radius-8 no-link-decor" align = "center">
+          <div>
+            ISSUE DISCUSSION
+          </div>
+        </a>
+        <a href = "/redirect?data=about_us" class = "bg-pearl child-full border-radius-8 no-link-decor" align = "center">
+          <div>
+            ABOUT US
+          </div>
+        </a>
+      </nav>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+  </body>
+</html>
